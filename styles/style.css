@@ -187,6 +187,7 @@ hr{
     justify-content: space-between;
 }
  .rating{
+    margin-left: 5px;
     font-size: 14.5px;
     font-weight: 400;
     color: #A2A2A2;
@@ -210,4 +211,72 @@ hr{
 }
 .fa-star.empty{
     color: #AEAEAE;
+}
+
+/* ------ Media Queries --------- */
+
+/* Mobile devices */
+@media only screen and (max-width: 688px){
+    .container{
+        width: 100%;
+    }
+
+    .players{
+        /* background-color: palevioletred; */
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        padding: 10px 0;
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 34px;
+    }
+
+    .blog-info {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: ;
+    }
+
+    .course-banner img {
+        margin-bottom: 8px;
+    }
+
+    .course-author {
+        margin: 0;
+    }
+    .course-duration{
+        margin-top: 10px;
+    }
+
+    .course-info {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    header {
+        display: none;
+    }
+}
+
+/* Tablet devices */
+
+@media only screen and (min-width: 689px) and (max-width: 991px){
+    header {
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .players{
+        background-color:#FF4A60;
+    }
 }
