@@ -139,7 +139,7 @@ hr{
     margin-left: 16px;
 }
 .blog-title{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 6px;
 }
@@ -243,7 +243,6 @@ hr{
 
     .courses{
         grid-template-columns: repeat(1, 1fr);
-        row-gap: ;
     }
 
     .course-banner img {
@@ -276,7 +275,8 @@ hr{
     .container{
         width: 100%;
     }
-    .players{
-        background-color:#FF4A60;
+
+    .courses{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
